@@ -1,0 +1,47 @@
+# ── Virtual Environments ──────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+
+# ── Python Build Artifacts ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+dist/
+build/
+*.egg-info/
+
+# ── Testing ───────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── IDEs ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Archon AI Generated Data (not committed) ──────────────────
+# The .ai_context folder is generated per-machine when you run `archon index`.
+# It should NOT be committed — each developer/user generates their own.
+.ai_context/
+
+# ── Scratch / Temp ────────────────────────────────────────────
+scratch/
+*.log
+
+# ── Secrets ───────────────────────────────────────────────────
+.env
+.env.*
+secrets.yaml
+

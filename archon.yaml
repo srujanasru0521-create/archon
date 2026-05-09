@@ -1,0 +1,20 @@
+layers:
+  - name: API
+    path: archon/server.py
+  - name: CLI
+    path: archon/cli.py
+  - name: Core
+    path: archon/rag.py
+  - name: Storage
+    path: archon/vector_store.py
+  - name: StorageGraph
+    path: archon/graph.py
+
+constraints:
+  - "API -> Core"
+  - "CLI -> Core"
+  - "Core -> Storage"
+  - "Core -> StorageGraph"
+  - "CLI !-> Storage"
+  - "CLI !-> StorageGraph"
+  - "API !-> Storage"
